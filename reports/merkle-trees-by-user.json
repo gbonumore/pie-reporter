@@ -1,0 +1,48 @@
+{
+  "0x63BCe354DBA7d6270Cb34dAA46B869892AbB3A79": {
+    "veAUXO": {
+      "2012-01": {
+        "windowIndex": 0,
+        "accountIndex": 0,
+        "rewards": "207493098688532373757",
+        "proof": [
+          "0x0afa451b1092a478f43f819d3af6a71cabf8501cfd3336378540cdea45c96764"
+        ]
+      }
+    },
+    "xAUXO": {
+      "2012-01": {
+        "windowIndex": 0,
+        "accountIndex": 0,
+        "rewards": "514505060961742925910",
+        "proof": [
+          "0xcaa9be8c4dadcb12a9a1fd0567e8025b0b3ba7243fd5199405ea953614a7fe09"
+        ]
+      }
+    }
+  },
+  "0x4A1c900Ee1042dC2BA405821F0ea13CfBADCAb7B": {
+    "veAUXO": {
+      "2012-01": {
+        "windowIndex": 0,
+        "accountIndex": 1,
+        "rewards": "20749309868853237375",
+        "proof": [
+          "0xfb3547ca53990c5de34341ae45f7954a6dc0802434cf72d2db26390bfdefb680"
+        ]
+      }
+    }
+  },
+  "0x91d1608675646b73069CaD97c88Daeb42418754f": {
+    "xAUXO": {
+      "2012-01": {
+        "windowIndex": 0,
+        "accountIndex": 1,
+        "rewards": "257252530480871462955",
+        "proof": [
+          "0x47f223b1eaee3ddfaa255b48a1d6edeeb43c5d771426b4589d0f52879a55c9a3"
+        ]
+      }
+    }
+  }
+}
