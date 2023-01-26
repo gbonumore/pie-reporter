@@ -1,0 +1,28 @@
+
+
+name: Update PR with json formatted merkletree ordered by user address
+
+on:
+  pull_request_target: # Run only on opened PRs
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
+      - 'epoch/**'
+
+jobs:
+  update-pr:
+    if: "!startsWith(github.event.head_commit.message, '**GENERATED**')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Run TS Reporter
+        uses: gbonumore/ts-reporter@v2.0.2
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          token: ${{ secrets.PIESECRET }}
+          branch: ${{ github.event.pull_request.head.ref }}
